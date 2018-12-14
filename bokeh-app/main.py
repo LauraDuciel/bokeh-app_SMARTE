@@ -1,4 +1,3 @@
-
 import yaml
 import os
 from functools import partial
@@ -32,7 +31,7 @@ Y = np.array([0,0.11, 0.98, 0,0,0.4]) #Activities of the different fractions fro
 (tab1,tab2)=PU.mpl_create_app(curdoc, folder=folder, data_name=data_name, data_name2=data_name2, activities=Y, 
     manip_mode=mode, dataref=dataref, normalize=False,netmode=NETMODE, sym=Sym, net=Net, display=["std"], nfeatures=100, debug=1)
 
-curdoc().add_root(Tabs(tabs=[ tab1,tab2]))
+curdoc().add_root(Tabs(tabs=[tab1,tab2]))
 curdoc().title = "Plasmo_Analysis_SMARTE"
 curdoc().theme = Theme(json=yaml.load("""
         attrs:
